@@ -3,7 +3,6 @@ class Configcat < Formula
   homepage "https://configcat.com"
   version "1.3.0"
   license "MIT"
-  bottle :unneeded
   
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/configcat/cli/releases/download/v1.3.0/configcat-cli_1.3.0_osx-x64.tar.gz"
