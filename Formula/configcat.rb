@@ -1,20 +1,20 @@
 class Configcat < Formula
   desc "The ConfigCat Command Line Interface allows you to interact with the ConfigCat Management API via the command line. It supports most functionality found on the ConfigCat Dashboard. You can manage ConfigCat resources like Feature Flags, Targeting / Percentage rules, Products, Configs, Environments, and more."
   homepage "https://configcat.com"
-  version "2.2.0"
+  version "2.2.1"
   license "MIT"
   
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/configcat/cli/releases/download/v2.2.0/configcat-cli_2.2.0_osx-x64.tar.gz"
-    sha256 "4dfdae9be0b6d0555827f720b6bce26b05f890a91901d5211211a2686bb28121"
+    url "https://github.com/configcat/cli/releases/download/v2.2.1/configcat-cli_2.2.1_osx-x64.tar.gz"
+    sha256 "e6033f720489dccab4c62118440126625f94dffea7cfd8e7078d735773de18ed"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/configcat/cli/releases/download/v2.2.0/configcat-cli_2.2.0_osx-arm64.tar.gz"
-    sha256 "2c12a15b4f824d11589fa4f1c6ffa9916adaf8ba1c820bf1af2cfa83d15decd7"
+    url "https://github.com/configcat/cli/releases/download/v2.2.1/configcat-cli_2.2.1_osx-arm64.tar.gz"
+    sha256 "a5e8fcd307d8897ab3f1c681222e7923acd10de09b6c612eaa47c0abb8e6ee82"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/configcat/cli/releases/download/v2.2.0/configcat-cli_2.2.0_linux-x64.tar.gz"
-    sha256 "65715e7b201a124ebd2e9ab3dcee0b1bcde1517615b023905bff68149beda6a7"
+    url "https://github.com/configcat/cli/releases/download/v2.2.1/configcat-cli_2.2.1_linux-x64.tar.gz"
+    sha256 "b34aa32fc05e28a9477924fb0183dda9bd4cf095b9ec1066950b6956745d8c07"
   end
   
   def install
@@ -22,6 +22,6 @@ class Configcat < Formula
   end
 
   test do
-    assert_match "2.2.0", shell_output("#{bin}/configcat --version")
+    assert_match "2.2.1", shell_output("#{bin}/configcat --version")
   end
 end
