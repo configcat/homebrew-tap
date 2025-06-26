@@ -1,5 +1,5 @@
 # configcat/tap
-[Homebrew](https://brew.sh/) third party reporistory for ConfigCat. 
+[Homebrew](https://brew.sh/) third party repository for ConfigCat. 
 
 To add this repository into your brew environment, execute the following command:
 ```bash
